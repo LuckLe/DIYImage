@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加  (发布到源代码jcenter()仓库使用)
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    忽略错误信息
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+}
+
+//添加  (发布到源代码jcenter()仓库使用)
+//http://blog.csdn.net/qq_23179075/article/details/71123452 AndroidStudio上传自己的项目到Bintray jCenter远程仓库!
+//审核通过即可使用compile 'com.hml:DIYImage:1.0.0'
+publish {
+    repoName = 'diyimage'//远程仓库名字,不指明，默认是上传到maven
+    userOrg = 'humeile520'//bintray.com的用户名
+    groupId = 'com.hml'//jcenter上的路径
+    artifactId = 'DIYImage'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = '自定义图片圆角 圆形 可设置边框颜色及大小和某个角不是圆角等功能的自定义图片控件。'//描述，不重要
+//    website = 'https://github.com/hml/DIYImage'//网站，不重要
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+
+    tasks.withType(Javadoc) {
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }
+}

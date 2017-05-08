@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DIYImage.iml" filepath="$PROJECT_DIR$/DIYImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIYImageLibrary/DIYImageLibrary.iml" filepath="$PROJECT_DIR$/DIYImageLibrary/DIYImageLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DIYImageModule/DIYImageModule.iml" filepath="$PROJECT_DIR$/DIYImageModule/DIYImageModule.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义imageview的自定义属性
+        format :
+        1. reference：参考某一资源ID。
+        1. color：颜色值。
+        1. boolean：布尔值
+        1. dimension：尺寸值
+        1. float：浮点值
+        1. integer：整型值
+        1. string：字符串
+        1. fraction：百分数
+        1. enum：枚举值
+        1. flag：位或运算
+    -->
+    <declare-styleable name="DIYImageView">
+        <!--圆角图片-->
+        <attr name="diy_image_Type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="diy_border_width" format="dimension" />         <!--描边的宽度-->
+        <attr name="diy_border_color" format="color" />             <!--描边的颜色-->
+        <attr name="diy_border_overlay" format="boolean" />         <!--是否需要描边-->
+        <attr name="diy_fill_color" format="color" />
+        <attr name="diy_round_radius" format="dimension" />         <!--圆角的大小-->
+        <!--左上，右上，左下，右下是否显示圆角，默认true-->
+        <attr name="diy_is_corner_top_left" format="boolean" />
+        <attr name="diy_is_corner_top_right" format="boolean" />
+        <attr name="diy_is_corner_bottom_left" format="boolean" />
+        <attr name="diy_is_corner_bottom_right" format="boolean" />
+    </declare-styleable>
+
+</resources>

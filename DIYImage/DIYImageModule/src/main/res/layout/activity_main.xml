@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hml.diyimage.MainActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.example.myapplication.views.diyimage.DIYImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/girl"
+        custom:diy_image_Type="circle"
+        custom:diy_border_width="2dp"
+        custom:diy_border_overlay="true"
+        custom:diy_border_color="@color/colorAccent"
+         />
+</LinearLayout>
