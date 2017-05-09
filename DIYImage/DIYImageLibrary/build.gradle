@@ -38,15 +38,21 @@ dependencies {
 
 //添加  (发布到源代码jcenter()仓库使用)
 //http://blog.csdn.net/qq_23179075/article/details/71123452 AndroidStudio上传自己的项目到Bintray jCenter远程仓库!
+//https://bintray.com/signup/oss Bintray jCenter远程仓库登录地址
 //审核通过即可使用compile 'com.hml:DIYImage:1.0.0'
+/*gradlew clean build bintrayUpload
+-PbintrayUser=humeile520
+-PbintrayKey=xxx
+-PdryRun=false
+ */
 publish {
     repoName = 'diyimage'//远程仓库名字,不指明，默认是上传到maven
     userOrg = 'humeile520'//bintray.com的用户名
     groupId = 'com.hml'//jcenter上的路径
     artifactId = 'DIYImage'//项目名称
-    publishVersion = '1.0.0'//版本号
+    publishVersion = '1.0.1'//版本号
     desc = '自定义图片圆角 圆形 可设置边框颜色及大小和某个角不是圆角等功能的自定义图片控件。'//描述，不重要
-//    website = 'https://github.com/hml/DIYImage'//网站，不重要
+    website = 'https://github.com/LuckLe/DIYImage'//网站，不重要
 }
 
 allprojects {
