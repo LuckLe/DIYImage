@@ -56,10 +56,15 @@
                 android:layout_width="160dp"
                 android:layout_height="100dp"
                 android:src="@mipmap/girl"
-                custom:diy_image_Type="round"
+                custom:diy_image_Type="circle"
                 custom:diy_border_width="2dp"
                 custom:diy_border_overlay="true"
                 custom:diy_border_color="@color/colorAccent"
+                custom:diy_is_corner_top_right="true"
+                custom:diy_is_corner_bottom_left="true"
+                custom:diy_is_corner_bottom_right="true"
+                custom:diy_is_corner_top_left="false"
+                custom:diy_round_radius="10dp"
                 android:layout_marginTop="5dp"
                 />
 
