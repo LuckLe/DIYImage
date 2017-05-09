@@ -4,9 +4,9 @@
     
 效果图
 ----------------------------------- 
-<div align=center><img width="150" height="150" src="https://github.com/LuckLe/DIYImage/blob/master/DIYImage/screen1.png?raw=true"/></div>
+<div align=center><img width="348" height="613" src="https://github.com/LuckLe/DIYImage/blob/master/DIYImage/screen1.png?raw=true"/></div>
 
-<div align=center><img width="150" height="150" src="https://github.com/LuckLe/DIYImage/blob/master/DIYImage/screen2.png?raw=true"/></div>
+<div align=center><img width="348" height="613" src="https://github.com/LuckLe/DIYImage/blob/master/DIYImage/screen2.png?raw=true"/></div>
   
   
     
