@@ -50,9 +50,18 @@ AndroidStudio中使用方法
 ----------------------------------- 
 在对moudle的build.gradle中添加如下即可：
 ```
-compile 'com.hml:DIYImage:1.0.0'
+compile 'com.hml:DIYImage:1.0.1'
 ```
 
+或者maven依赖
+```
+<dependency>
+  <groupId>com.hml</groupId>
+  <artifactId>DIYImage</artifactId>
+  <version>1.0.1</version>
+  <type>pom</type>
+</dependency>
+```
 
 
   
