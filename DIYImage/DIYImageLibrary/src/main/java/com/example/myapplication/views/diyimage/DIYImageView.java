@@ -314,6 +314,12 @@ public class DIYImageView extends ImageView{
         }
         // shader的变换矩阵，我们这里主要用于放大或者缩小
         mMatrix.setScale(scale, scale);
+
+        //将图片移到中间
+        float translateX =  (getWidth()-bmp.getWidth()*scale)/2;
+        float translateY =  (getHeight()-bmp.getHeight()*scale)/2;
+        mMatrix.postTranslate(translateX,translateY);
+
         // 设置变换矩阵
         mBitmapShader.setLocalMatrix(mMatrix);
         // 设置shader
